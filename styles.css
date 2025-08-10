@@ -18,16 +18,6 @@ html{
 	scroll-behavior: smooth;
 }
 
-@keyframes slideInFromLeft{
-	0%{
-		transform: translateX(-100%);
-	}
-
-	100%{
-		transform: translateX(0px);
-	}
-}
-
 .main{
 
 }
@@ -57,10 +47,6 @@ html{
 	font-weight: bold;
 	font-size: 85px;
 	letter-spacing: 1px;
-	animation: slideInFromLeft 0.6s cubic-bezier(0.2, 1, 1, 1) forwards;
-	animation-delay: 0.5s;
-	animation-fill-mode: backwards;
-
 }
 
 #desc-wrapper{
@@ -82,9 +68,6 @@ html{
 	color: grey;
 	width: 1200px;
 	letter-spacing: 2px;
-	animation: slideInFromLeft 0.7s cubic-bezier(0.2, 1, 1, 1) forwards;
-	animation-delay: 0.5s;
-	animation-fill-mode: backwards;
 }
 
 #title-name-dot{
@@ -136,7 +119,3 @@ html{
 	letter-spacing: 2px;
 	transition: transform 0.3s ease, color 0.3s ease, font-size 0.3s ease, letter-spacing 0.3s ease;
 }
-
-
-
-stoopid error code
