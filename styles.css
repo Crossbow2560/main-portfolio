@@ -1,12 +1,17 @@
 /*fonts*/
 
-.roboto-extrabold{
+.roboto-regular{
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 800;
+  font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 html{
@@ -16,12 +21,10 @@ html{
 @keyframes slideInFromLeft{
 	0%{
 		transform: translateX(-100%);
-		opacity: 0;
 	}
 
 	100%{
 		transform: translateX(0px);
-		opacity: 1;
 	}
 }
 
@@ -50,11 +53,11 @@ html{
 
 #title-name{
 	display: inline-block;
-	font-family: roboto-extrabold, sans-serif;
+	font-family: Roboto, sans-serif;
 	font-weight: bold;
 	font-size: 85px;
 	letter-spacing: 1px;
-	animation: slideInFromLeft 0.8s ease-out forwards;
+	animation: slideInFromLeft 0.6s cubic-bezier(0.2, 1, 1, 1) forwards;
 	animation-delay: 0.5s;
 	animation-fill-mode: backwards;
 
@@ -73,12 +76,13 @@ html{
 }
 
 #desc{
-	font-family: 'roboto-extrabold', sans-serif;
+	font-family: Lato, sans-serif;
 	font-weight: 400;
 	font-size: 20px;
 	color: grey;
 	width: 1200px;
-	animation: slideInFromLeft 0.8s ease-out forwards;
+	letter-spacing: 2px;
+	animation: slideInFromLeft 0.7s cubic-bezier(0.2, 1, 1, 1) forwards;
 	animation-delay: 0.5s;
 	animation-fill-mode: backwards;
 }
@@ -99,9 +103,9 @@ html{
 #sidebar-name{
 	font-weight: bolder;
 	font-size: 30px;
-	font-family: 'roboto-extrabold', sans-serif;
+	font-family: Roboto , sans-serif;
 	text-align: left;
-	padding-bottom: 50px;
+	padding-bottom: 120px;
 }
 
 #sidebar-name-dot{
@@ -110,22 +114,25 @@ html{
 
 
 .tabs{
-	font-family: 'roboto-extrabold', sans-serif;
+	font-family: Roboto, sans-serif;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 15px;
-	font-weight: 400;
+	font-size: 18px;
+	font-weight: normal;
 	color: grey;
-	padding-bottom: 40px;
-	padding-top: 40px;
-	padding-left: 20px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	padding-left: 10px;
+	height: 58px;
 	transform: translate(0px, 0px);
-	transition: transform 0.3s ease, color 0.3s ease;
-	letter-spacing: 2px;
+	transition: transform 0.3s ease, color 0.3s ease, font-size 0.3s ease, letter-spacing 0.3s ease;
+	letter-spacing: 1px;
 }
 
 .tabs:hover{
 	color: #A587F4;
 	transform: translate(10px, 0px);
-	transition: transform 0.3s ease;
+	font-size: 22px;
+	letter-spacing: 2px;
+	transition: transform 0.3s ease, color 0.3s ease, font-size 0.3s ease, letter-spacing 0.3s ease;
 }
