@@ -15,3 +15,12 @@ anime({
 	delay: 500,
 	fill: 'forwards'
 });
+
+anime({
+	targets: '.slideImage',
+	translateX: ['200%', '0%'],
+	duration: 900,
+	easing: 'easeOutQuart',
+	delay: 500,
+	fill: 'forwards'
+})
