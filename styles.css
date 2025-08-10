@@ -1,0 +1,40 @@
+/*fonts*/
+
+.roboto-extrabold{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.main{
+
+}
+
+.sidebar{
+	padding: 20px;
+	display: block;
+	border-radius: 10px;
+	border: 1px solid darkgrey;
+	width: 180px;
+	height: 94vh;
+	position: fixed;
+}
+
+.inner-sidebar{
+	margin: 20px;
+
+}
+
+#sidebar-name{
+	font-weight: bolder;
+	font-size: 30px;
+	font-family: 'roboto-extrabold', sans-serif;
+	text-align: left;
+}
+
+#sidebar-name-dot{
+	color: #9C04FC;
+}
