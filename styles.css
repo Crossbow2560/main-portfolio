@@ -9,6 +9,10 @@
     "wdth" 100;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 @keyframes slideInFromLeft{
 	0%{
 		transform: translateX(-100%);
@@ -51,7 +55,8 @@
 	font-size: 85px;
 	letter-spacing: 1px;
 	animation: slideInFromLeft 0.8s ease-out forwards;
-	animation-delay: 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: backwards;
 
 }
 
@@ -74,7 +79,8 @@
 	color: grey;
 	width: 1200px;
 	animation: slideInFromLeft 0.8s ease-out forwards;
-	animation-delay: 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: backwards;
 }
 
 #title-name-dot{
